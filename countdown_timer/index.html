@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla countdown timer</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Countdown Timer</h1>
+      <div class="time-container">
+        <div class="hour each-time-container">
+          <p>Hour</p>
+          <input
+            type="number"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            id="hourInp"
+            maxlength="2"
+            placeholder="00"
+          />
+        </div>
+        <p class="colon">:</p>
+        <div class="hour each-time-container">
+          <p>Minute</p>
+          <input
+            type="number"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            id="minInp"
+            maxlength="2"
+            placeholder="00"
+          />
+        </div>
+        <p class="colon">:</p>
+        <div class="hour each-time-container">
+          <p>Second</p>
+          <input
+            type="number"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            id="secInp"
+            maxlength="2"
+            placeholder="00"
+          />
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn start-btn" id="startBtn">Start</button>
+        <button class="btn stop-btn" id="stopBtn">Stop</button>
+        <button class="btn reset-btn" id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
