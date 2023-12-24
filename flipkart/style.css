@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .chat-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .chat-list {
+    flex: 1;
+    overflow-y: scroll;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+  }
+  .selected {
+    background-color: #ccc; 
+}
+  
+  .chat-view {
+    padding: 10px;
+    width: 50vw;
+    display: none;
+  }
+  .chat-view .show {
+    display: block !important;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .chat-messages {
+    height: 70vh;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .chat-input-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .chat-list li:hover {
+    background-color: #eee;
+  }
+  
+
+  .chat-list img{
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .chat-messages .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .chat-messages .message.user {
+    
+    background-color: blue;
+    width: fit-content;
+    color: white;
+    text-align: right;
+    margin-left: 73%;
+  }
+  
+  .chat-messages .message.bot {
+    background-color: #e0e0e0;
+    text-align: left;
+    background-color: white;
+    width: fit-content;
+    color: black;
+    text-align: right;
+    margin-left: 0%;
+  }
+  
+  .chat-messages .optionedMessage .option {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-messages .option.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .last-message-date{
+    font-size: 14px;
+    color: black;
+    padding-left: 50%;
+  }
+ .chat-header img{
+    width: 50px;
+    height: 50px;
+ }
+ .chat-order{
+    display: flex;
+    flex-direction: column;
+ }
